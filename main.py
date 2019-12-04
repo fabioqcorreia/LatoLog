@@ -16,16 +16,3 @@ class LatoLog:
 
         print(log.format_log(content=content,
                              type=self.type))
-
-
-content = {
-    "Asdfg": "asdfgasdas",
-    "suadgy": 2,
-    "s8dah": "asdfgasdas",
-    "asdhdas": False,
-    "aisdags": "asdfgasdas"
-}
-
-main = LatoLog()
-
-main.print_log(content)
