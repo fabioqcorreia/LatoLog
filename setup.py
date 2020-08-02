@@ -12,7 +12,6 @@ setup(
     name="LatoLog",
     version="0.1.0",
     author="Fábio Correia",
-    author_email="fabioqcorreia@gmail.com",
     description="A package that makes customizing logs easier than expected",
     long_description=README,
     long_description_content_type="text/markdown",
