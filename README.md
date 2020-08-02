@@ -9,7 +9,7 @@ Simple customizable logging.
 
 ## Usage example
 
-    import LatoLog
+    from latolog.main import LatoLog
 
     my_content = { "a": 1, "b", 2 }
 
