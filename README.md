@@ -1,19 +1,20 @@
 # Latolog
 
 Simple customizable logging.
+> Only JSON mode is supported at the moment. XML is WIP
 
-> Only JSON mode is supported at the moment.
+## Installation
 
-## Example
+    pip install LatoLog
 
-```python
-import LatoLog
+## Usage example
 
-my_content = { "a": 1, "b", 2 }
+    import LatoLog
 
-latolog = LatoLog()
+    my_content = { "a": 1, "b", 2 }
 
-latolog.print_log(my_content)
+    latolog = LatoLog()
 
->>> {"timestamp": "04-12-2019 16:43:49", "a": 1, "b": 2 }
-```
+    latolog.print_log(my_content)
+
+    >>> {"timestamp": "04-12-2019 16:43:49", "a": 1, "b": 2 }

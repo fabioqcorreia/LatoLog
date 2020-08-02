@@ -1,4 +1,4 @@
-from logging.format import FormatLog
+from logging_formatter.format import FormatLog
 from utils import constants
 
 class LatoLog:

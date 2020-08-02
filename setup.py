@@ -1,22 +1,35 @@
-import setuptools
+import os.path
+from setuptools import setup, find_packages
 
-with open("README.md", "r") as fh:
-    long_description = fh.read()
+# The directory containing this file
+HERE = os.path.abspath(os.path.dirname(__file__))
 
-setuptools.setup(
-    name="latolog-fabioqcorreia", # Replace with your own username
-    version="0.0.1",
+# The text of the README file
+with open(os.path.join(HERE, "README.md")) as fid:
+    README = fid.read()
+
+setup(
+    name="LatoLog",
+    version="0.1.0",
     author="Fábio Correia",
     author_email="fabioqcorreia@gmail.com",
     description="A package that makes customizing logs easier than expected",
-    long_description=long_description,
+    long_description=README,
     long_description_content_type="text/markdown",
+    license="MIT",
     url="https://github.com/fabioqcorreia/LatoLog",
-    packages=setuptools.find_packages(),
+    packages=find_packages(),
+    include_package_data=True,
     classifiers=[
+        "Programming Language :: Python",
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.6',
+    entry_points={
+        "console_scripts": [
+            "latolog=latolog.main:LatoLog"
+        ]
+    }
 )
