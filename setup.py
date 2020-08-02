@@ -10,7 +10,7 @@ with open(os.path.join(HERE, "README.md")) as fid:
 
 setup(
     name="LatoLog",
-    version="0.1.0",
+    version="0.1.1",
     author="Fábio Correia",
     description="A package that makes customizing logs easier than expected",
     long_description=README,
